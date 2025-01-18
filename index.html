@@ -207,6 +207,30 @@
          </div>
          
     </div>
+    <button id="view-more-btn" style="display: block; margin: 20px auto; padding: 10px 20px; background: #17a2b8; color: #f8f9fa; border: none; border-radius: 5px; cursor: pointer;">View More</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const projects = document.querySelectorAll(".project-card");
+            const viewMoreBtn = document.getElementById("view-more-btn");
+            let visibleProjects = 4;
+
+            projects.forEach((project, index) => {
+                if (index >= visibleProjects) {
+                    project.style.display = "none";
+                }
+            });
+
+            viewMoreBtn.addEventListener("click", function() {
+                projects.forEach((project, index) => {
+                    if (index >= visibleProjects) {
+                        project.style.display = "flex";
+                    }
+                });
+                viewMoreBtn.style.display = "none";
+            });
+        });
+    </script>
 
 
 

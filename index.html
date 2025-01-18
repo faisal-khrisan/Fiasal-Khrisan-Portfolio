@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #212529;
+            color: #f8f9fa;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: #343a40;
+        }
+
+        header .circle-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #6c757d;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8f9fa;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 20px 0 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            flex-grow: 1;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: #495057;
+            color: #f8f9fa;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card h2 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+
+        .project-card a {
+            margin-top: auto;
+            text-align: center;
+            padding: 10px;
+            background: #17a2b8;
+            color: #f8f9fa;
+            border-radius: 5px;
+            text-decoration: none;
+            
+        }
+
+        .project-card a:hover {
+            background: #138496;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #212529;
+            color: #adb5bd;
+            font-size: 1rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="circle-frame">
+    <img src="faisal.jpg" alt="Faisal's Photo" class="profile-picture">
+</div>
+
+<style>
+    .circle-frame {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #6c757d;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f8f9fa;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .profile-picture {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+</style>
+        <h1>Faisal Khrisan</h1>
+        <p>Aspiring Python Developer | Second-Year Computer Science Student</p>
+        <p>Focusing on Data Science, AI &  Machine Learning</p>
+    </header>
+    <h1 style="text-align: center;padding-top: 20px;">Recent Projects</h1>
+    <div class="projects" id="projects-container">
+       
+        <div class="project-card">
+            
+            <h2>Simple Calculator</h2>
+            <p>A basic calculator with addition, subtraction, multiplication, and division. Includes error handling for invalid inputs and division by zero.</p>
+            <a href="https://www.pythonanywhere.com/gists/63864ec46acae842921d670bd1363976/Calculator.py/ipython/" target="_blank">View Project</a>
+        </div>
+        <div class="project-card">
+            <h2>Pong Game</h2>
+            <p>A classic Pong game implemented using Python's Turtle and Tkinter libraries, featuring smooth animations and interactive gameplay.</p>
+            <a href="PongGame_1.5_exe_setup.zip" target="_blank" download>Download the Game</a>
+        </div>
+        <div class="project-card">
+            <h2>Snake Game</h2>
+            <p>A classic Snake game implemented using Python's Turtle and Tkinter libraries, featuring smooth animations and interactive gameplay.</p>
+            <a href="SnakeGame_exe_1.5_setup.zip" target="_blank" download>Download the Game</a>
+        </div>
+        <div class="project-card">
+            <h2>Coffee Machine System Simulator</h2>
+            <p>A Python-based simulator for a coffee machine system, allowing users to select different coffee options, manage resources, and simulate the coffee-making process.</p>
+            <a href="https://www.pythonanywhere.com/gists/6f328b68a9f6cb997074f41536279c0b/CoffeeMchine.py/python/" target="_blank" >View Project</a>
+        </div>
+        <div class="project-card">
+            <h2>Hangman Game</h2>
+            <p>A Python project that implements the classic Hangman game, allowing users to guess letters to reveal a hidden word. It includes a scoring system and error handling.</p>
+            <a href="https://www.pythonanywhere.com/gists/320848aa89955fba8531a25bfb124ad3/hangman_game.py/python/" target="_blank">View Project</a>
+         </div>
+         <div class="project-card">
+            <h2>Higher Lower Game</h2>
+            <p>A Python project that implements the Higher Lower game, where players guess if the next number is higher or lower than the current one. It includes a scoring system and error handling.</p>
+            <a href="https://www.pythonanywhere.com/gists/c42693d98d6b2da53a35824d9d5d08a5/HigherLowerGame.py/python/" target="_blank">View Project</a>
+         </div>
+        <div class="project-card">
+            <h2>Hirst's Spot Painting</h2>
+            <p>A Python Turtle project that creates a dot painting inspired by Damien Hirst's famous spot paintings, featuring colorful and randomly placed dots.</p>
+            <a href="https://github.com/faisal-khrisan/Hirst-s-Spot-Painting" target="_blank" >View Project</a>
+        </div>
+        <div class="project-card">
+            <h2>Blackjack Game</h2>
+            <p>A Python-based Blackjack game with a simple  interface, allowing users to play against the computer.</p>
+            <a href="https://gist.github.com/faisal-khrisan/f091981952dfdaf3adb3d8dba95d8b75" target="_blank" >View Project</a>
+        </div>
+        <div class="project-card">
+            <h2>Spirograph</h2>
+            <p>A Python Turtle project that creates intricate and colorful spirograph designs, demonstrating the use of loops and mathematical functions to generate complex patterns.</p>
+        <a href="https://github.com/faisal-khrisan/draw-spirograph" target="_blank" >View Project</a>
+         </div>
+         <div class="project-card">
+            <h2>Caesar Cipher Encryption and Decryption</h2>
+            <p>A Python project that implements Caesar Cipher encryption and decryption, showcasing basic cryptography techniques and string manipulation.</p>
+            <a href="https://github.com/faisal-khrisan/Caesar-Cipher-Encryption-and-Decryption" target="_blank">View Project</a>
+         </div>
+         <div class="project-card">
+            <h2>Password Generator</h2>
+            <p>A Python project that generates secure passwords, allowing users to specify the length and complexity, including options for uppercase, lowercase, numbers, and special characters.</p>
+            <a href="https://github.com/faisal-khrisan/Password-Generator" target="_blank">View Project</a>
+         </div>
+         <div class="project-card">
+            <h2>Rock-Paper-Scissors Game</h2>
+            <p>A Python project that implements the classic Rock-Paper-Scissors game, allowing users to play against the computer with a simple interface and scoring system.</p>
+            <a href="https://www.pythonanywhere.com/gists/10bded207c810c9c9faf28f5808adefd/main.py/python/" target="_blank">View Project</a>
+         </div>
+         
+    </div>
+
+
+
+    <footer>
+        <p>© 2025 Faisal Khrisan | Python Developer Portfolio</p>
+    </footer>
+<div class="social-icons">
+    <a href="https://github.com/faisal-khrisan" target="_blank">
+        <i class="fab fa-github social-icon"></i>
+    </a>
+    <a href="https://www.instagram.com/faisal.khrisan?igsh=MXE5aTBlcW1nNzhkbQ==" target="_blank">
+        <i class="fab fa-instagram social-icon"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/faisal-khrisan-834280287/" target="_blank">
+        <i class="fab fa-linkedin social-icon"></i>
+    </a>
+    <a href="https://discord.com/users/1306972676321185843" target="_blank">
+        <i class="fab fa-discord social-icon"></i>
+    </a>
+    <a href="https://stackoverflow.com/users/27409685/faisal-khrisan" target="_blank">
+        <i class="fab fa-stack-overflow social-icon"></i>
+    </a>
+    <a href="https://x.com/F_Khrisan?t=I3f43yUoLViZm1p-VDNhSw&s=09" target="_blank">
+        <i class="fab fa-twitter social-icon"></i>
+    </a>
+</div>
+
+<style>
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        color: #ffffff;
+    }
+</style>
+</body>
+</html>
